@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 20% 8%;
+    --foreground: 220 100% 98%;
+
+    --card: 240 18% 12%;
+    --card-foreground: 220 100% 98%;
+
+    --popover: 240 18% 12%;
+    --popover-foreground: 220 100% 98%;
+
+    --primary: 220 90% 56%;
+    --primary-foreground: 220 100% 98%;
+
+    --secondary: 280 60% 50%;
+    --secondary-foreground: 220 100% 98%;
+
+    --muted: 240 15% 18%;
+    --muted-foreground: 220 20% 65%;
+
+    --accent: 190 90% 50%;
+    --accent-foreground: 240 20% 8%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 220 100% 98%;
+
+    --border: 240 15% 20%;
+    --input: 240 15% 20%;
+    --ring: 220 90% 56%;
+
+    --radius: 0.75rem;
+
+    /* Space theme colors */
+    --space-blue: 220 90% 56%;
+    --space-purple: 280 60% 50%;
+    --space-cyan: 190 90% 50%;
+    --space-dark: 240 20% 8%;
+    --space-darker: 240 25% 5%;
+    
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(220 90% 56% / 0.3), hsl(280 60% 50% / 0.3));
+    --gradient-space: linear-gradient(180deg, hsl(240 20% 8%), hsl(240 25% 5%));
+    --gradient-glow: radial-gradient(circle at center, hsl(220 90% 56% / 0.2), transparent);
+    
+    /* Shadows and effects */
+    --shadow-glow: 0 0 30px hsl(220 90% 56% / 0.3);
+    --shadow-glow-strong: 0 0 40px hsl(220 90% 56% / 0.5);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(180deg, hsl(var(--space-dark)), hsl(var(--space-darker)));
+    min-height: 100vh;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(var(--space-blue) / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(var(--space-blue) / 0.6);
+  }
+}
+
+@keyframes stars-twinkle {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.stars-bg {
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(2px 2px at 60px 70px, white, transparent),
+    radial-gradient(1px 1px at 50px 50px, white, transparent),
+    radial-gradient(1px 1px at 130px 80px, white, transparent),
+    radial-gradient(2px 2px at 90px 10px, white, transparent);
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  animation: stars-twinkle 3s ease-in-out infinite;
+}
