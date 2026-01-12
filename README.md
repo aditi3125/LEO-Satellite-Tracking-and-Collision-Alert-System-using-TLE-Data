@@ -45,6 +45,8 @@ The system includes **secure authentication**, **user dashboards**, **data logs*
   - User Dashboard
 - Animated Earth background
 
+<img width="800" height="644" alt="image" src="https://github.com/user-attachments/assets/e5a34581-7dc4-4980-b52b-e57d20ac6f5f" />
+
 ---
 
 ###  2. User Authentication (Supabase)
@@ -84,6 +86,9 @@ The system includes **secure authentication**, **user dashboards**, **data logs*
 - Velocity vector
 - Satellite name
 - Timestamp
+  
+   <img width="800" height="575" alt="image" src="https://github.com/user-attachments/assets/d11d5c88-20fd-4a18-8896-37a72148494d" />
+
 
 #### Step 5: Satellite Details Page
 - View:
@@ -113,6 +118,8 @@ The system includes **secure authentication**, **user dashboards**, **data logs*
 -  **Green Status**: All satellites are safe
 - Displays names/IDs of satellites in proximity
 
+<img width="800" height="861" alt="image" src="https://github.com/user-attachments/assets/9f124f24-62da-44f5-ba26-04cf77deac2a" />
+
 ---
 
 ###  5. User Dashboard
@@ -131,6 +138,8 @@ The system includes **secure authentication**, **user dashboards**, **data logs*
 - Technologies used
 - Overview of LEO satellite tracking
 - Educational explanation of orbital mechanics
+
+<img width="800" height="612" alt="image" src="https://github.com/user-attachments/assets/e2a05d65-c6a5-44a1-bc02-2306cecdf18a" />
 
 ---
 
@@ -181,7 +190,7 @@ The system includes **secure authentication**, **user dashboards**, **data logs*
 
 ## System Architecture Diagram
 
-<img width="1081" height="763" alt="image" src="https://github.com/user-attachments/assets/bcd084c4-4097-4ac3-810e-2eaf2ce6adf2" />
+<img width="800" height="763" alt="image" src="https://github.com/user-attachments/assets/bcd084c4-4097-4ac3-810e-2eaf2ce6adf2" />
 
 
 ## Future Enhancements
@@ -207,14 +216,6 @@ It allows users to:
 The system serves as both:
 -  An educational tool for orbital mechanics
 -  A prototype platform for satellite operations and space safety
-
----
-
-##  Author
-
-**Aditi Kumari**  
-Final Year Engineering Student  
-Project Domain: Aerospace + Full Stack Development  
 
 ---
 
